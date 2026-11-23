@@ -21,6 +21,8 @@ SQL（Structured Query Language，结构化查询语言）的命令按照其功�
     ```
     SELECT name, age FROM users WHERE age > 18;
     ```
+
+    `SELECT` 的详细用法（`FROM`、`WHERE`、`ORDER BY`、`LIMIT` 等）见 [[SELECT查询]]。
     
 
 ### 2. DML (Data Manipulation Language - 数据操作语言)
@@ -67,6 +69,8 @@ SQL（Structured Query Language，结构化查询语言）的命令按照其功�
     ALTER TABLE users ADD COLUMN email VARCHAR(100);
     DROP TABLE users;
     ```
+
+    表结构的具体创建、修改和删除，见 [[MySQL 表的创建、删除与修改]]。
     
 
 ### 4. DCL (Data Control Language - 数据控制语言)

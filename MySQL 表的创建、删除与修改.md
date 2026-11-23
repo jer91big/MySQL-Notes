@@ -14,6 +14,8 @@ CREATE TABLE 表名 (
 );
 ```
 
+其中「数据类型」有哪些可选值，见 [[MySQL中的数据类型]]。
+
 示例：
 
 ```
@@ -117,7 +119,7 @@ MODIFY COLUMN age VARCHAR(10);
 
 将 `age` 列的数据类型从 `INT` 修改为 `VARCHAR(10)`。
 
-注意：修改列类型时，如果原来的列有 `NOT NULL`、`DEFAULT` 等属性，需要根据需要一并写上，避免丢失原有属性。
+注意：修改列类型时，如果原来的列有 `NOT NULL`、`DEFAULT` 等属性（这些属于约束，见 [[常见约束]]），需要根据需要一并写上，避免丢失原有属性。
 
 ## **六、添加新列（ADD COLUMN）**
 
@@ -249,4 +251,4 @@ DROP TABLE students;
 
 这几条语句是后面学习 Java Web、MySQL 数据库设计以及后端开发时非常基础的内容。
 
-建议你先把这份笔记保存下来，接下来学习 `INSERT`、`UPDATE`、`DELETE`、`SELECT` 时，就能把 MySQL 的基本操作串起来了。
+建议你先把这份笔记保存下来，接下来学习 `INSERT`、`UPDATE`、`DELETE`、`SELECT` 时，就能把 MySQL 的基本操作串起来了。其中 `SELECT` 的用法见 [[SELECT查询]]。
