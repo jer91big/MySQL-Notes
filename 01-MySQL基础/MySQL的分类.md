@@ -18,7 +18,7 @@ SQL（Structured Query Language，结构化查询语言）的命令按照其功�
     
     SQL
     
-    ```
+    ```sql
     SELECT name, age FROM users WHERE age > 18;
     ```
 
@@ -41,7 +41,7 @@ SQL（Structured Query Language，结构化查询语言）的命令按照其功�
     
     SQL
     
-    ```
+    ```sql
     INSERT INTO users (name, age) VALUES ('张三', 25);
     UPDATE users SET age = 26 WHERE name = '张三';
     DELETE FROM users WHERE name = '张三';
@@ -64,7 +64,7 @@ SQL（Structured Query Language，结构化查询语言）的命令按照其功�
     
     SQL
     
-    ```
+    ```sql
     CREATE TABLE users (id INT, name VARCHAR(50));
     ALTER TABLE users ADD COLUMN email VARCHAR(100);
     DROP TABLE users;
@@ -89,7 +89,7 @@ SQL（Structured Query Language，结构化查询语言）的命令按照其功�
     
     SQL
     
-    ```
+    ```sql
     GRANT SELECT, INSERT ON database.* TO 'username'@'localhost';
     ```
     
@@ -108,7 +108,7 @@ SQL（Structured Query Language，结构化查询语言）的命令按照其功�
     
     SQL
     
-    ```
+    ```sql
     START TRANSACTION;
     -- 执行一些 DML 操作
     COMMIT; -- 确认提交

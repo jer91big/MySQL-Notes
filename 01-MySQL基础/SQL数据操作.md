@@ -7,7 +7,7 @@
 
 SQL
 
-```
+```sql
 INSERT INTO students (id, name, score, class_name)
 VALUES (101, '林小满', 88, 'CS1');
 ```
@@ -21,7 +21,7 @@ VALUES (101, '林小满', 88, 'CS1');
 
 SQL
 
-```
+```sql
 INSERT INTO students
 VALUES (102, '陈星宇', 94, 'CS1');
 ```
@@ -32,7 +32,7 @@ VALUES (102, '陈星宇', 94, 'CS1');
 
 SQL
 
-```
+```sql
 UPDATE students
 SET score = 95
 WHERE id = 101;
@@ -55,7 +55,7 @@ WHERE id = 101;
 
 SQL
 
-```
+```sql
 DELETE FROM students
 WHERE id = 102;
 ```

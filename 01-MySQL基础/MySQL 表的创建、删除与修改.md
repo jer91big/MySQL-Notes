@@ -6,7 +6,7 @@
 
 基本语法：
 
-```
+```sql
 CREATE TABLE 表名 (
     列名1 数据类型,
     列名2 数据类型,
@@ -18,7 +18,7 @@ CREATE TABLE 表名 (
 
 示例：
 
-```
+```sql
 CREATE TABLE student (
     id INT,
     name VARCHAR(20),
@@ -35,19 +35,19 @@ CREATE TABLE student (
 
 基本语法：
 
-```
+```sql
 DROP TABLE 表名;
 ```
 
 示例：
 
-```
+```sql
 DROP TABLE student;
 ```
 
 如果表存在才删除，不存在也不报错：
 
-```
+```sql
 DROP TABLE IF EXISTS student;
 ```
 
@@ -61,13 +61,13 @@ DROP TABLE IF EXISTS student;
 
 基本语法：
 
-```
+```sql
 ALTER TABLE 旧表名 RENAME TO 新表名;
 ```
 
 示例：
 
-```
+```sql
 ALTER TABLE student RENAME TO students;
 ```
 
@@ -75,7 +75,7 @@ ALTER TABLE student RENAME TO students;
 
 也可以使用：
 
-```
+```sql
 RENAME TABLE student TO students;
 ```
 
@@ -85,14 +85,14 @@ RENAME TABLE student TO students;
 
 基本语法：
 
-```
+```sql
 ALTER TABLE 表名
 RENAME COLUMN 旧列名 TO 新列名;
 ```
 
 示例：
 
-```
+```sql
 ALTER TABLE student
 RENAME COLUMN name TO username;
 ```
@@ -105,14 +105,14 @@ RENAME COLUMN name TO username;
 
 基本语法：
 
-```
+```sql
 ALTER TABLE 表名
 MODIFY COLUMN 列名 新数据类型;
 ```
 
 示例：
 
-```
+```sql
 ALTER TABLE student
 MODIFY COLUMN age VARCHAR(10);
 ```
@@ -127,14 +127,14 @@ MODIFY COLUMN age VARCHAR(10);
 
 基本语法：
 
-```
+```sql
 ALTER TABLE 表名
 ADD COLUMN 列名 数据类型;
 ```
 
 示例：
 
-```
+```sql
 ALTER TABLE student
 ADD COLUMN address VARCHAR(100);
 ```
@@ -143,7 +143,7 @@ ADD COLUMN address VARCHAR(100);
 
 还可以指定添加位置：
 
-```
+```sql
 -- 在最前面添加
 ALTER TABLE student
 ADD COLUMN address VARCHAR(100) FIRST;
@@ -159,14 +159,14 @@ ADD COLUMN address VARCHAR(100) AFTER name;
 
 基本语法：
 
-```
+```sql
 ALTER TABLE 表名
 DROP COLUMN 列名;
 ```
 
 示例：
 
-```
+```sql
 ALTER TABLE student
 DROP COLUMN address;
 ```
@@ -195,7 +195,7 @@ DROP COLUMN address;
 
 假设现在有一张学生表 `student`，我们依次执行下面的操作：
 
-```
+```sql
 -- 1. 创建表
 CREATE TABLE student (
     id INT,

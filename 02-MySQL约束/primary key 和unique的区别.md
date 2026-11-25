@@ -12,7 +12,7 @@
 
 假设有一张学生表：
 
-```
+```sql
 CREATE TABLE student (
     id INT PRIMARY KEY,
     phone VARCHAR(20) UNIQUE,
@@ -57,20 +57,20 @@ CREATE TABLE student (
 
 主键不允许 NULL。
 
-```
+```sql
 id INT PRIMARY KEY
 ```
 
 下面这种数据不允许：
 
-```
+```sql
 INSERT INTO student (id, phone, name)
 VALUES (NULL, '13800138000', '张三');
 ```
 
 但是唯一约束允许 NULL：
 
-```
+```sql
 phone VARCHAR(20) UNIQUE
 ```
 
@@ -95,7 +95,7 @@ phone VARCHAR(20) UNIQUE
 
 那么可以这样设计：
 
-```
+```sql
 CREATE TABLE student (
     id INT PRIMARY KEY,
     phone VARCHAR(20) UNIQUE,
