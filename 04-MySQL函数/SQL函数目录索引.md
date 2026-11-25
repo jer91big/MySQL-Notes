@@ -7,9 +7,9 @@ SQL 函数可以理解为查询时的“微型加工机”：输入数据，输�
 
 ### 笔记目录
 
-- [[SQL函数/字符串函数]]：`UPPER`、`LOWER`、`TRIM`、`SUBSTRING`、`CONCAT`、`REPLACE` 等文本处理函数。
-- [[SQL函数/聚合函数与分组查询]]：`COUNT`、`SUM`、`AVG`、`MAX`、`MIN`，以及 `GROUP BY` / `HAVING` 分组统计。
-- [[SQL函数/流程函数]]：`CASE WHEN` 条件判断。
+- [[字符串函数]]：`UPPER`、`LOWER`、`TRIM`、`SUBSTRING`、`CONCAT`、`REPLACE` 等文本处理函数。
+- [[聚合函数与分组查询]]：`COUNT`、`SUM`、`AVG`、`MAX`、`MIN`，以及 `GROUP BY` / `HAVING` 分组统计。
+- [[流程函数]]：`CASE WHEN` 条件判断。
 
 ### 后续待补充
 
