@@ -76,3 +76,7 @@ WHERE id = 102;
 2. **核对 `WHERE` 条件**：确认条件是不是写得太宽（比如漏了 `AND` 把别的行也圈进来了）。
     
 3. **区分 `DELETE` 和 `TRUNCATE`**：`DELETE` 可以带 `WHERE` 挑着删；而 `TRUNCATE TABLE students;` 则是直接把整张表“推倒重来、清空所有行”，通常不带 `WHERE`，也比逐行 `DELETE` 快得多。
+
+---
+
+**下一篇：** [[02-MySQL约束/01-常见约束|常见约束]]

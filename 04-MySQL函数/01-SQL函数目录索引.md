@@ -7,9 +7,9 @@ SQL 函数可以理解为查询时的“微型加工机”：输入数据，输�
 
 ### 笔记目录
 
-- [[字符串函数]]：`UPPER`、`LOWER`、`TRIM`、`SUBSTRING`、`CONCAT`、`REPLACE` 等文本处理函数。
-- [[聚合函数与分组查询]]：`COUNT`、`SUM`、`AVG`、`MAX`、`MIN`，以及 `GROUP BY` / `HAVING` 分组统计。
-- [[流程函数]]：`CASE WHEN` 条件判断。
+- [[02-字符串函数]]：`UPPER`、`LOWER`、`TRIM`、`SUBSTRING`、`CONCAT`、`REPLACE` 等文本处理函数。
+- [[03-聚合函数与分组查询]]：`COUNT`、`SUM`、`AVG`、`MAX`、`MIN`，以及 `GROUP BY` / `HAVING` 分组统计。
+- [[04-流程函数]]：`CASE WHEN` 条件判断。
 
 ### 后续待补充
 
@@ -17,4 +17,8 @@ SQL 函数可以理解为查询时的“微型加工机”：输入数据，输�
 - 日期时间函数：`NOW()`、`CURDATE()`、`DATE_FORMAT`、`DATEDIFF`、`DATE_ADD`
 - NULL 处理函数：`IFNULL()`、`COALESCE()`、`NULLIF()`
 
-查询基础可以看 [[SELECT查询]]。
+查询基础可以看 [[01-SELECT查询]]。
+
+---
+
+**下一篇：** [[04-MySQL函数/02-字符串函数|字符串函数]]
