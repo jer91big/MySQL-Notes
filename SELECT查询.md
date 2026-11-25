@@ -93,29 +93,12 @@ FROM students
 WHERE class_name NOT IN ('CS1', 'CS2');
 ```
 
-### 3. 整理账面与贴标签：`DISTINCT` 与 `AS`
+### 3. 起别名与去重：`AS` 和 `DISTINCT`
 
-#### `DISTINCT`：去重筛子
+- **`AS`**：给字段或表起一个临时名称，只改查询结果的显示名称，不改真实表结构和数据。
+- **`DISTINCT`**：对查询结果去重；如果后面跟多列，则按整行组合去重。
 
-全班有 60 人，但班级只有 3 个。如果直接 `SELECT class_name FROM students;` 会蹦出 60 行重复的 `'CS1'`、`'CS2'`。加上 `DISTINCT`，就像把数据倒进筛子里晃一晃，**相同的只留一份**：
-
-```sql
-SELECT DISTINCT class_name FROM students;
-```
-
-如果 `DISTINCT` 后面跟多列（如 `SELECT DISTINCT class_name, score`），则是把**整行组合**去重。
-
-#### `AS`：换名牌 / 起外号
-
-查询结果里，原本的列名或计算表达式可能又长又丑（比如 `score * 1.1`），用 `AS` 给它贴一张好懂的新名牌（`AS` 关键字在不少数据库里也可省略直接写空格，但显式写出 `AS` 可读性最强）：
-
-```sql
-SELECT
-  name AS 姓名,
-  score AS 原始分,
-  score * 1.1 AS 加权分
-FROM students;
-```
+详细用法、示例和对比记忆见 [[AS 和 DISTINCT]]。
 
 ### 4. 排排队：`ORDER BY`（按规矩排序）
 
