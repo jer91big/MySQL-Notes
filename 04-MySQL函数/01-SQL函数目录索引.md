@@ -9,13 +9,13 @@ SQL 函数可以理解为查询时的“微型加工机”：输入数据，输�
 
 - [[02-字符串函数]]：`UPPER`、`LOWER`、`TRIM`、`SUBSTRING`、`CONCAT`、`REPLACE` 等文本处理函数。
 - [[03-聚合函数与分组查询]]：`COUNT`、`SUM`、`AVG`、`MAX`、`MIN`，以及 `GROUP BY` / `HAVING` 分组统计。
-- [[04-流程函数]]：`CASE WHEN` 条件判断。
+- [[04-流程函数]]：`CASE WHEN`、`IF` 条件判断，以及 `IFNULL`、`COALESCE`、`NULLIF` 空值处理。
+- [[05-数值函数]]：`ROUND`、`TRUNCATE`、`CEIL`、`FLOOR`、`ABS`、`MOD`、`POWER`、`SQRT`、`RAND`。
+- [[06-日期时间函数]]：`NOW()`、`CURDATE()`、`DATE_FORMAT`、`DATEDIFF`、`DATE_ADD` / `DATE_SUB`。
 
-### 后续待补充
+### 下一步
 
-- 数值函数：`ROUND`、`CEIL`、`FLOOR`、`ABS`、`MOD`、`RAND`
-- 日期时间函数：`NOW()`、`CURDATE()`、`DATE_FORMAT`、`DATEDIFF`、`DATE_ADD`
-- NULL 处理函数：`IFNULL()`、`COALESCE()`、`NULLIF()`
+核心函数到这里就齐了（`CAST()` / `CONVERT()` 类型转换可按需再补）。接下来进入 **索引**（笔记待写）。
 
 查询基础可以看 [[01-SELECT查询]]。
 
